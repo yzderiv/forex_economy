@@ -30,3 +30,13 @@ This module contains classes and functions for the forex economy model.
 - **Classes**: baseline, frictional
 - **Functions**: get_states(betas), set_inputs(paras), get_econ_wrapper(is_frictional, paras), torch_bilinear, torch_set_approx, torch_get_approx_scalar, torch_get_approx_array, torch_get_sim, get_beta, get_cov, torch_moments, econ_plot_wrapper, make_plots(item_name, is_frictional, paras)
 - **Usage**: Provides the core functionality for setting up and simulating the forex economy model, as well as computing and plotting various economic moments and quantities.
+
+### computing_empirical_moments.py
+
+This script computes empirical moments from the provided data files.
+
+- **Imports**: pandas, numpy, matplotlib.pyplot
+
+- **Functions**: get_quantity(df, country1, country2, indicator), get_corr_std(res, n)
+
+- **Usage**: Reads data from CSV files, computes various empirical moments, and plots rolling correlations.
